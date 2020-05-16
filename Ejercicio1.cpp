@@ -13,12 +13,12 @@ int main(){
 }
 int suma(int *num){
 	int suma=0,i=0;
-	for (i;i<tam;suma+=(*(num+i++)));
+	for (i;i++<tam;suma+=(*(num++)));
 	return suma;
 }
 
 int recursiva( int *num){
-	return tam--==1 ? *(num+0): *(num+tam)+recursiva(num);
+	return tam--==1 ? *(num): *(num+tam)+recursiva(num);
 	//Tambien es valido
 	/*if(tam--==1){
 		return *(num+0);

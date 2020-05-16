@@ -25,5 +25,5 @@ int *ordenar(int *arreglo,int tam){
 void mostrar(int *arreglo,int size){
     cout<<"\n Mostrando arreglo: "<<endl;
     for(int j=0;j<size;j++)
-    	cout<<*(arreglo+j)<<" ";
+    	cout<<*(arreglo++)<<" ";
 }

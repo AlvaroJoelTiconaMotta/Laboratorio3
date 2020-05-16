@@ -26,7 +26,7 @@ int recursivo(int *arreglo,int size){
 void mostrar(int *arreglo,int size){
     cout<<"\n Mostrando arreglo: "<<endl;
     for(int j=0;j<size;j++)
-    	cout<<*(arreglo+j)<<" ";
+    	cout<<*(arreglo++)<<" ";
 }
 void cambiar(int &num1, int &num2){
     int aux=num1;
